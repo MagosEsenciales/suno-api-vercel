@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/custom_generate.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/custom_generate",
+      "dest": "api/custom_generate.py"
+    }
+  ]
+}
